@@ -9,7 +9,7 @@ namespace UserRatingService
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall,
         ConcurrencyMode = ConcurrencyMode.Multiple)]
-    public class Service1 : IUserRateService, IDisposable
+    public class UserRateService : IUserRateService, IDisposable
     {
         private readonly DataContext _context = new DataContext("dbUser");
 
